@@ -9,28 +9,67 @@
  */
 {
   "sections": {
-    "sp_image_lily_dHr4mm": {
-      "type": "sp-image-lily",
+    "image_banner_XP6Nwq": {
+      "type": "image-banner",
       "settings": {
-        "is_fullwidth": true,
-        "background_image": "shopify://shop_images/Screenshot_2025-04-19_at_18.36.26.png",
-        "image_description": "",
-        "image_description_fz": 24,
-        "section_padding_top": 0,
-        "section_padding_bottom": 0,
-        "img_min_height": 50,
-        "background_position_x": 50,
-        "background_position_y": 50,
-        "section_padding_top_mobile": 0,
-        "section_padding_bottom_mobile": 0,
-        "img_min_height_mobile": 50,
-        "background_position_x_mobile": 50,
-        "background_position_y_mobile": 50,
-        "custom_css": ""
+        "image": "shopify://shop_images/Screenshot_2025-04-19_at_18.36.26.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "image_behavior": "none",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": true,
+        "color_scheme": "scheme-2",
+        "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
+        "show_text_below": true
+      }
+    },
+    "rich_text_kepKqP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_UYtyzF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Premium Off-Court Padel Garments",
+            "heading_size": "h1"
+          }
+        },
+        "text_DQrwkC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_r3nnBW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_UYtyzF",
+        "text_DQrwkC",
+        "button_r3nnBW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "sp_image_lily_dHr4mm"
+    "image_banner_XP6Nwq",
+    "rich_text_kepKqP"
   ]
 }
