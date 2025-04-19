@@ -35,7 +35,7 @@
             "title_custom": false,
             "title_font": "roboto_n4",
             "title_size": 40,
-            "title_size_mobile": 40,
+            "title_size_mobile": 32,
             "title_height": 100,
             "title_align": "center",
             "title_mt": 12,
