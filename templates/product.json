@@ -209,7 +209,7 @@
         "background_image_4": "shopify://shop_images/Padelism_GrAD_2_-_Sand_Color.png",
         "section_padding_top": 50,
         "section_padding_bottom": 50,
-        "section_padding_top_mobile": 0,
+        "section_padding_top_mobile": 20,
         "section_padding_bottom_mobile": 20,
         "custom_css": ""
       }
