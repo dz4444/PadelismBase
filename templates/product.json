@@ -131,7 +131,7 @@
         "content_radius": 20,
         "gap": 20,
         "gap_mobile": 5,
-        "background_color": "#F5F5F5",
+        "background_color": "#f5f5f5",
         "background_gradient": "",
         "border_color": "#000000",
         "content_bg": "",
@@ -169,7 +169,7 @@
       "settings": {
         "is_fullwidth": false,
         "gutter": 10,
-        "bg_color": "transparent",
+        "bg_color": "rgba(0,0,0,0)",
         "heading_text": "",
         "heading_tag": "h2",
         "inherit_fonts": false,
@@ -195,14 +195,14 @@
             "answer": "<p>Its simple really. You just add the questions as blocks and then you edit the question and answer.</p>"
           }
         },
-        "question_crDqRQ": {
+        "question_nFpVRi": {
           "type": "question",
           "settings": {
-            "question": "<b>How does the FAQ section work?</b>",
+            "question": "<strong>How does the FAQ section work?</strong>",
             "answer": "<p>Its simple really. You just add the questions as blocks and then you edit the question and answer.</p>"
           }
         },
-        "question_Ki6bLB": {
+        "question_crDqRQ": {
           "type": "question",
           "settings": {
             "question": "<b>How does the FAQ section work?</b>",
@@ -212,8 +212,8 @@
       },
       "block_order": [
         "question_6HcFgN",
-        "question_crDqRQ",
-        "question_Ki6bLB"
+        "question_nFpVRi",
+        "question_crDqRQ"
       ],
       "settings": {
         "override_fonts": false,
@@ -243,10 +243,10 @@
         "container_radius": 0,
         "container_shadow": false,
         "container_border_size": 0,
-        "container_border_color": "#888",
+        "container_border_color": "#888888",
         "question_text_size": 25,
-        "question_color": "#111111",
-        "answer_color": "#555555",
+        "question_color": "#1c523b",
+        "answer_color": "#1cd332",
         "vertical_alignment": "start",
         "image_location": "left",
         "image_aspect_ratio": "4 / 3",
@@ -254,8 +254,8 @@
         "media_shadow": true,
         "text_alignment": "center",
         "mobile_text_alignment": "center",
-        "headline": "<strong>Sample Headline</strong>",
-        "text": "Use this text field to add a description. Leave blank to remove.",
+        "headline": "Frequently Asked Questions",
+        "text": "",
         "headline_spacing": 15
       }
     }
