@@ -1,34 +1,38 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
-  <head>
-
-<style>
-  .product-form__input--image-swatch .swatch-image-wrapper {
+  <style>
+  /* Remove pill/border styling from variant swatches */
+  .product-form__input--pill input[type="radio"] + label,
+  .product-form__input--swatch input[type="radio"] + label {
     border: none !important;
     border-radius: 0 !important;
     padding: 0 !important;
     box-shadow: none !important;
-    width: 60px;
-    height: 60px;
+    width: 60px !important;
+    height: 60px !important;
     overflow: hidden;
   }
 
-  .product-form__input--image-swatch .swatch-image-wrapper img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 !important;
+  /* Remove styling from selected state */
+  .product-form__input--pill input[type="radio"]:checked + label,
+  .product-form__input--swatch input[type="radio"]:checked + label {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
   }
 
-  .product-form__input--image-swatch input[type="radio"]:checked + .swatch-image-wrapper {
-    outline: none !important;
-    box-shadow: none !important;
+  /* Make the image fill and crop correctly */
+  .product-form__input--pill input[type="radio"] + label img,
+  .product-form__input--swatch input[type="radio"] + label img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 0 !important;
   }
 </style>
 
-
-
-
+  
+  <head>
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
