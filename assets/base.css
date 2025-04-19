@@ -3612,8 +3612,9 @@ details-disclosure > details {
 }
 
 
+/* Global heading size adjustments */
 h1 {
-    font-size: 3rem; /* Adjust as needed */
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -3622,4 +3623,19 @@ h2 {
 
 h3 {
     font-size: 1.25rem;
+}
+
+/* Mobile-only heading adjustments */
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
 }
