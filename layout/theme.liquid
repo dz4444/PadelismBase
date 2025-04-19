@@ -1,6 +1,35 @@
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+
+<style>
+  .product-form__input--image-swatch .swatch-image-wrapper {
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+
+  .product-form__input--image-swatch .swatch-image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 !important;
+  }
+
+  .product-form__input--image-swatch input[type="radio"]:checked + .swatch-image-wrapper {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+</style>
+
+
+
+
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -375,26 +404,4 @@
   </body>
 </html>
 
-  <style>
-  .product-form__input--image-swatch .swatch-image-wrapper {
-    border: none !important;
-    border-radius: 0 !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-  }
-
-  .product-form__input--image-swatch .swatch-image-wrapper img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 0 !important;
-  }
-
-  .product-form__input--image-swatch input[type="radio"]:checked + .swatch-image-wrapper {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-</style>
+  
