@@ -1,92 +1,94 @@
 {% comment %}
-  Custom Variant Picker with Images
+  Renders product variant-picker
+
+  Accepts:
+  - product: {Object} product object.
+  - block: {Object} passing the block information.
+  - product_form_id: {String} Id of the product form to which the variant picker is associated.
+  Usage:
+  {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}
-
 {%- unless product.has_only_default_variant -%}
-  <style>
-    .variant-image-swatch {
-      width: 60px;
-      height: 60px;
-      border-radius: 8px;
-      object-fit: cover;
-      border: 2px solid transparent;
-      cursor: pointer;
-      transition: border 0.2s;
-    }
-    .variant-image-swatch.selected {
-      border-color: #000;
-    }
-  </style>
-
   <variant-selects
     id="variant-selects-{{ section.id }}"
     data-section="{{ section.id }}"
     {{ block.shopify_attributes }}
   >
-    {% for option in product.options_with_values %}
-      {% if option.name == 'Color' %}
-        <fieldset class="product-form__input product-form__input--swatch">
-          <legend class="form__label">{{ option.name }}</legend>
-          <div class="variant-image-picker">
-            {% for value in option.values %}
-              {% assign image_url = '' %}
-              {% case value %}
-                {% when 'Gray Camel' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_Gray_Camel.png?v=1745079967' %}
-                {% when 'Navy' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_Navy.png?v=1745079949' %}
-                {% when 'Sand Color' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_Sand_Color.png?v=1745079773' %}
-                {% when 'Oat Grey' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_Oat_Grey.png?v=1745079752' %}
-                {% when 'Black' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_Black.png?v=1745079737' %}
-                {% when 'White' %}{% assign image_url = 'https://cdn.shopify.com/s/files/1/0906/5388/4802/files/Padelism_GrAD_2_-_White.png?v=1745079912' %}
-              {% endcase %}
+    {%- for option in product.options_with_values -%}
+      {%- liquid
+        assign swatch_count = option.values | map: 'swatch' | compact | size
+        assign picker_type = block.settings.picker_type
 
-              <img
-                src="{{ image_url }}"
-                alt="{{ value }}"
-                class="variant-image-swatch {% if value == option.selected_value %}selected{% endif %}"
-                data-value="{{ value }}"
-              >
-            {% endfor %}
-          </div>
-          <input type="hidden" name="options[{{ option.name }}]" value="{{ option.selected_value }}">
+        if swatch_count > 0 and block.settings.swatch_shape != 'none'
+          if block.settings.picker_type == 'dropdown'
+            assign picker_type = 'swatch_dropdown'
+          else
+            assign picker_type = 'swatch'
+          endif
+        endif
+      -%}
+      {%- if picker_type == 'swatch' -%}
+        <fieldset class="js product-form__input product-form__input--swatch">
+          <legend class="form__label">
+            {{ option.name }}:
+            <span data-selected-value>
+              {{- option.selected_value -}}
+            </span>
+          </legend>
+          {% render 'product-variant-options',
+            product: product,
+            option: option,
+            block: block,
+            picker_type: picker_type
+          %}
         </fieldset>
-      {% else %}
-        <fieldset class="product-form__input">
+      {%- elsif picker_type == 'button' -%}
+        <fieldset class="js product-form__input product-form__input--pill">
           <legend class="form__label">{{ option.name }}</legend>
-          <select name="options[{{ option.name }}]">
-            {% for value in option.values %}
-              <option
-                value="{{ value }}"
-                {% if value == option.selected_value %}selected{% endif %}
-              >
-                {{ value }}
-              </option>
-            {% endfor %}
-          </select>
+          {% render 'product-variant-options',
+            product: product,
+            option: option,
+            block: block,
+            picker_type: picker_type
+          %}
         </fieldset>
-      {% endif %}
-    {% endfor %}
+      {%- else -%}
+        <div class="product-form__input product-form__input--dropdown">
+          <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+            {{ option.name }}
+          </label>
+          <div class="select">
+            {%- if picker_type == 'swatch_dropdown' -%}
+              <span
+                data-selected-value
+                class="dropdown-swatch"
+              >
+                {% render 'swatch', swatch: option.selected_value.swatch, shape: block.settings.swatch_shape %}
+              </span>
+            {%- endif -%}
+            <select
+              id="Option-{{ section.id }}-{{ forloop.index0 }}"
+              class="select__select"
+              name="options[{{ option.name | escape }}]"
+              form="{{ product_form_id }}"
+            >
+              {% render 'product-variant-options',
+                product: product,
+                option: option,
+                block: block,
+                picker_type: picker_type
+              %}
+            </select>
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
 
     <script type="application/json" data-selected-variant>
       {{ product.selected_or_first_available_variant | json }}
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".variant-image-picker img").forEach(function (img) {
-          img.addEventListener("click", function () {
-            const selectedValue = this.getAttribute("data-value");
-            const input = this.closest("fieldset").querySelector("input[type='hidden']");
-            input.value = selectedValue;
-
-            // Highlight selected image
-            this.closest(".variant-image-picker").querySelectorAll("img").forEach(el => el.classList.remove("selected"));
-            this.classList.add("selected");
-
-            // Trigger change event for Shopify’s JS to update
-            input.dispatchEvent(new Event("change", { bubbles: true }));
-          });
-        });
-      });
     </script>
   </variant-selects>
 {%- endunless -%}
