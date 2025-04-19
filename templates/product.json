@@ -147,6 +147,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -162,11 +163,108 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "sp_gallery_chloe_DNkVXK": {
+      "type": "sp-gallery-chloe",
+      "settings": {
+        "is_fullwidth": false,
+        "gutter": 10,
+        "bg_color": "transparent",
+        "heading_text": "",
+        "heading_tag": "h2",
+        "inherit_fonts": false,
+        "text_align": "center",
+        "background_image_1": "shopify://shop_images/ChatGPT_Image_Mar_28_2025_at_11_30_04_AM_copy.png",
+        "background_image_2": "shopify://shop_images/Padelism_GrAD_2_-_Navy.png",
+        "background_image_3": "shopify://shop_images/PadelismLogoLight.svg",
+        "background_image_4": "shopify://shop_images/Padelism_GrAD_2_-_Sand_Color.png",
+        "section_padding_top": 50,
+        "section_padding_bottom": 50,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 20,
+        "custom_css": ""
+      }
+    },
+    "sp_faq_with_image_d3FrUd": {
+      "type": "sp-faq-with-image",
+      "blocks": {
+        "question_6HcFgN": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How does the FAQ section work?</strong>",
+            "answer": "<p>Its simple really. You just add the questions as blocks and then you edit the question and answer.</p>"
+          }
+        },
+        "question_crDqRQ": {
+          "type": "question",
+          "settings": {
+            "question": "<b>How does the FAQ section work?</b>",
+            "answer": "<p>Its simple really. You just add the questions as blocks and then you edit the question and answer.</p>"
+          }
+        },
+        "question_Ki6bLB": {
+          "type": "question",
+          "settings": {
+            "question": "<b>How does the FAQ section work?</b>",
+            "answer": "<p>Its simple really. You just add the questions as blocks and then you edit the question and answer.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_6HcFgN",
+        "question_crDqRQ",
+        "question_Ki6bLB"
+      ],
+      "settings": {
+        "override_fonts": false,
+        "headline_font": "roboto_n4",
+        "text_font": "roboto_n4",
+        "text_size": 15,
+        "mobile_text_size": 15,
+        "text_line_height": "inherit",
+        "headline_size": 40,
+        "mobile_headline_size": 40,
+        "headline_line_height": "inherit",
+        "text_color": "#1c523b",
+        "link_color": "#005bd3",
+        "show_on_device": "all",
+        "section_background_color": "linear-gradient(180deg, rgba(250, 252, 227, 1), rgba(250, 252, 227, 1) 99%)",
+        "section_padding_top_bottom": 25,
+        "mobile_section_padding_top_bottom": 25,
+        "section_padding_left_right": 25,
+        "mobile_section_padding_left_right": 25,
+        "container_background_color": "",
+        "container_max_width": 1000,
+        "container_padding_top_bottom": 10,
+        "mobile_container_padding_top_bottom": 10,
+        "container_padding_left_right": 10,
+        "mobile_container_padding_left_right": 10,
+        "element_spacing": 15,
+        "container_radius": 0,
+        "container_shadow": false,
+        "container_border_size": 0,
+        "container_border_color": "#888",
+        "question_text_size": 25,
+        "question_color": "#111111",
+        "answer_color": "#555555",
+        "vertical_alignment": "start",
+        "image_location": "left",
+        "image_aspect_ratio": "4 / 3",
+        "media_radius": 2,
+        "media_shadow": true,
+        "text_alignment": "center",
+        "mobile_text_alignment": "center",
+        "headline": "<strong>Sample Headline</strong>",
+        "text": "Use this text field to add a description. Leave blank to remove.",
+        "headline_spacing": 15
+      }
     }
   },
   "order": [
     "main",
     "ss_text_block_pro_JUDBKx",
-    "related-products"
+    "related-products",
+    "sp_gallery_chloe_DNkVXK",
+    "sp_faq_with_image_d3FrUd"
   ]
 }
