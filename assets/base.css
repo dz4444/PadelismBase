@@ -3598,7 +3598,7 @@ details-disclosure > details {
 
 
 .product-form__submit.button {
-  background-color: #00473E; /* Replace with your brand color */
+  background-color: #1CD332; /* Replace with your brand color */
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -3608,5 +3608,5 @@ details-disclosure > details {
 }
 
 .product-form__submit.button:hover {
-  background-color: #003B33; /* Slightly darker for hover effect */
+  background-color: #1C523B; /* Slightly darker for hover effect */
 }
