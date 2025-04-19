@@ -11,9 +11,9 @@
   "current": {
     "logo": "shopify://shop_images/PadelismLogoLight.svg",
     "logo_width": 90,
-    "type_header_font": "assistant_n4",
+    "type_header_font": "sans-serif",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "sans-serif",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -156,7 +156,7 @@
       },
       "scheme-2": {
         "settings": {
-          "background": "#f2fce3",
+          "background": "#fafce3",
           "background_gradient": "",
           "text": "#1c523b",
           "button": "#1c523b",
