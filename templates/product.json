@@ -30,7 +30,7 @@
         "custom_liquid_CeXHWw": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>Exceptional Fabric Quality\n</p>\n<p>🗸 Portable, take it anywhere!</p>\n<p>🗸 Enhance Endurance</p>"
           }
         },
         "quantity_selector": {
@@ -115,11 +115,11 @@
         "text_34iCGR": {
           "type": "text",
           "settings": {
-            "text": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh viverra non semper suscipit posuere a pede.</p>",
+            "text": "<p>Designed for the modern player who values substance and style, the Padelism Heavyweight Tee is built for downtime.</p>",
             "text_custom": false,
             "text_font": "assistant_n4",
-            "text_size": 20,
-            "text_height": 130,
+            "text_size": 22,
+            "text_height": 140,
             "text_align": "center",
             "text_mt": 16,
             "text_color": "#000000"
