@@ -30,7 +30,7 @@
         "custom_liquid_CeXHWw": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<style>\n  p {\n    font-size: 14px;\n    line-height: 1.2;\n  }\n</style>\n\n<p>Exceptional Fabric Quality\n</p>\n<p>🗸 Portable, take it anywhere!</p>\n<p>🗸 Enhance Endurance</p>"
+            "custom_liquid": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Features List</title>\n    <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap\" rel=\"stylesheet\">\n    <style>\n        @keyframes borderAnimation {\n            0% {\n                border-color: #e8e8e8;\n                box-shadow: 0 0 10px rgba(232, 232, 232, 0.5);\n            }\n            50% {\n                border-color: #dcdcdc;\n                box-shadow: 0 0 20px rgba(220, 220, 220, 0.7);\n            }\n            100% {\n                border-color: #e8e8e8;\n                box-shadow: 0 0 10px rgba(232, 232, 232, 0.5);\n            }\n        }\n\n        body.unique-body-xyz123 {\n            font-family: 'Roboto', sans-serif;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            height: 100vh;\n            margin: 0;\n            background-color: #f0f0f0;\n            padding: 4px 0;\n        }\n\n        .features-container-xyz123 {\n            background-color: #f8f9fa;\n            border-radius: 0; /* Sharp corners */\n            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\n            padding: 20px;\n            max-width: 400px;\n            width: 100%;\n            border: 2px solid #e8e8e8;\n            animation: borderAnimation 3s infinite;\n        }\n\n        .feature-item-xyz123 {\n            display: flex;\n            align-items: center;\n            margin-bottom: 15px;\n        }\n\n        .feature-item-xyz123:last-child {\n            margin-bottom: 0;\n        }\n\n        .check-icon-xyz123 {\n            width: 24px;\n            height: 24px;\n            margin-right: 10px;\n        }\n\n        .feature-text-xyz123 {\n            font-size: 14px;\n            color: #333;\n            font-weight: 400;\n        }\n    </style>\n</head>\n<body class=\"unique-body-xyz123\">\n    <div class=\"features-container-xyz123\">\n        <div class=\"feature-item-xyz123\">\n            <img src=\"https://www.svgrepo.com/show/507980/check-badge.svg\" alt=\"Check Icon\" class=\"check-icon-xyz123\">\n            <div class=\"feature-text-xyz123\">Exceptional Fabric Quality</div>\n        </div>\n        <div class=\"feature-item-xyz123\">\n            <img src=\"https://www.svgrepo.com/show/507980/check-badge.svg\" alt=\"Check Icon\" class=\"check-icon-xyz123\">\n            <div class=\"feature-text-xyz123\">Refined Fit for Off-Court Wear</div>\n        </div>\n        <div class=\"feature-item-xyz123\">\n            <img src=\"https://www.svgrepo.com/show/507980/check-badge.svg\" alt=\"Check Icon\" class=\"check-icon-xyz123\">\n            <div class=\"feature-text-xyz123\">Built for Everyday Resilience</div>\n        </div>\n    </div>\n</body>\n</html>"
           }
         },
         "quantity_selector": {
@@ -85,19 +85,6 @@
     "ss_text_block_pro_JUDBKx": {
       "type": "ss-text-block-pro",
       "blocks": {
-        "subtitle_dnkkwP": {
-          "type": "subtitle",
-          "settings": {
-            "subtitle": "Subtitle",
-            "subtitle_custom": false,
-            "subtitle_font": "assistant_n4",
-            "subtitle_size": 20,
-            "subtitle_height": 100,
-            "subtitle_align": "center",
-            "subtitle_mt": 0,
-            "subtitle_color": "#000000"
-          }
-        },
         "title_WxfLqA": {
           "type": "title",
           "settings": {
@@ -109,7 +96,7 @@
             "title_height": 100,
             "title_align": "center",
             "title_mt": 12,
-            "title_color": "#000000"
+            "title_color": "#1c523b"
           }
         },
         "text_34iCGR": {
@@ -118,16 +105,15 @@
             "text": "<p>Designed for the modern player who values substance and style, the Padelism Heavyweight Tee is built for downtime.</p>",
             "text_custom": false,
             "text_font": "assistant_n4",
-            "text_size": 22,
+            "text_size": 18,
             "text_height": 140,
             "text_align": "center",
             "text_mt": 16,
-            "text_color": "#000000"
+            "text_color": "#1c523b"
           }
         }
       },
       "block_order": [
-        "subtitle_dnkkwP",
         "title_WxfLqA",
         "text_34iCGR"
       ],
@@ -140,11 +126,11 @@
         "image_ration": "none",
         "image_location": "row",
         "image_location_mobile": "column",
-        "content_padding_horizontal": 40,
-        "content_padding_vertical": 40,
-        "content_radius": 40,
-        "gap": 30,
-        "gap_mobile": 15,
+        "content_padding_horizontal": 20,
+        "content_padding_vertical": 20,
+        "content_radius": 20,
+        "gap": 20,
+        "gap_mobile": 5,
         "background_color": "#F5F5F5",
         "background_gradient": "",
         "border_color": "#000000",
