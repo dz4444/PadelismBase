@@ -5,14 +5,13 @@
   - product: {Object} product object.
   - option: {Object} current product_option object.
   - block: {Object} block object.
-  - picker_type: {String} type of picker to dispay
-
+  - picker_type: {String} type of picker to display
 
   Usage:
   {% render 'product-variant-options',
     product: product,
     option: option,
-    block: block
+    block: block,
     picker_type: picker_type
   %}
 {% endcomment %}
@@ -59,23 +58,32 @@
   {%- endcapture -%}
 
   {%- if picker_type == 'swatch' -%}
-    {%- capture help_text -%}
-      <span class="visually-hidden">{{ value | escape }}</span>
-      {{ label_unavailable }}
-    {%- endcapture -%}
-    {%
-      render 'swatch-input',
-      id: input_id,
-      name: input_name,
-      value: value | escape,
-      swatch: value.swatch,
-      product_form_id: product_form_id,
-      checked: value.selected,
-      visually_disabled: option_disabled,
-      shape: block.settings.swatch_shape,
-      help_text: help_text,
-      additional_props: input_dataset
-    %}
+    {%- assign variant = product.variants | where: 'option1', value | first -%}
+    {%- if variant and variant.featured_image -%}
+      <label
+        for="{{ input_id }}"
+        style="cursor: pointer; display: inline-block; margin-right: 10px;"
+      >
+        <input
+          type="radio"
+          id="{{ input_id }}"
+          name="{{ input_name }}"
+          value="{{ value | escape }}"
+          form="{{ product_form_id }}"
+          class="sr-only"
+          {% if value.selected %}checked{% endif %}
+          {% if option_disabled %}disabled{% endif %}
+          {{ input_dataset }}
+        >
+        <img
+          src="{{ variant.featured_image | image_url: width: 64 }}"
+          alt="{{ value }}"
+          style="width: 48px; height: 48px; object-fit: cover; border-radius: 6px; border: 2px solid {% if value.selected %}#000{% else %}transparent{% endif %}; transition: border 0.3s;"
+        >
+        {{ label_unavailable }}
+      </label>
+    {%- endif -%}
+
   {%- elsif picker_type == 'button' -%}
     <input
       type="radio"
@@ -95,6 +103,7 @@
       {{ value -}}
       {{ label_unavailable }}
     </label>
+
   {%- elsif picker_type == 'dropdown' or picker_type == 'swatch_dropdown' -%}
     <option
       id="{{ input_id }}"
