@@ -3610,3 +3610,16 @@ details-disclosure > details {
 .product-form__submit.button:hover {
   background-color: #1C523B; /* Slightly darker for hover effect */
 }
+
+
+h1 {
+    font-size: 2rem; /* Adjust as needed */
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
