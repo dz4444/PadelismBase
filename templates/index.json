@@ -59,7 +59,7 @@
           "type": "button",
           "settings": {
             "btn": "See the collection",
-            "btn_url": "",
+            "btn_url": "shopify://products/grad-2-heavyweight-earth-tone-fog-t-shirt-305gsm",
             "btn_custom": false,
             "btn_font": "roboto_n4",
             "btn_size": 16,
@@ -99,7 +99,7 @@
         "content_radius": 40,
         "gap": 30,
         "gap_mobile": 15,
-        "background_color": "#F5F5F5",
+        "background_color": "#f5f5f5",
         "background_gradient": "",
         "border_color": "#000000",
         "content_bg": "",
