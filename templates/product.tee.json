@@ -96,6 +96,10 @@
           "type": "description",
           "disabled": true,
           "settings": {}
+        },
+        "judge_me_reviews_preview_badge_BTKADF": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
@@ -112,7 +116,8 @@
         "custom_liquid_iLLQDB",
         "collapsible_tab_fmmdFn",
         "collapsible_tab_THak4t",
-        "description"
+        "description",
+        "judge_me_reviews_preview_badge_BTKADF"
       ],
       "settings": {
         "enable_sticky_info": true,
