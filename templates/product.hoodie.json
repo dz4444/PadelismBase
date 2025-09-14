@@ -20,6 +20,10 @@
           "type": "price",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_Fwb9mU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -97,6 +101,7 @@
       "block_order": [
         "title",
         "price",
+        "judge_me_reviews_preview_badge_Fwb9mU",
         "variant_picker",
         "custom_liquid_CeXHWw",
         "custom_liquid_cipkti",
@@ -186,6 +191,23 @@
         "padding_horizontal_mobile": 1.5,
         "content_width": 120,
         "border_thickness": 0
+      }
+    },
+    "1757841213bd5efad2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_D7T9dw": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_D7T9dw"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -303,13 +325,21 @@
         "text": "",
         "headline_spacing": 15
       }
+    },
+    "1757841189f1cd08ba": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "main",
     "ss_text_block_pro_JUDBKx",
+    "1757841213bd5efad2",
     "related-products",
     "sp_gallery_chloe_DNkVXK",
-    "sp_faq_with_image_d3FrUd"
+    "sp_faq_with_image_d3FrUd",
+    "1757841189f1cd08ba"
   ]
 }
