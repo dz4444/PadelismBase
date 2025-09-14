@@ -303,6 +303,24 @@
         "text": "",
         "headline_spacing": 15
       }
+    },
+    "17578396179a946422": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_hrgbYV": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_hrgbYV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -310,6 +328,7 @@
     "ss_text_block_pro_JUDBKx",
     "related-products",
     "sp_gallery_chloe_DNkVXK",
-    "sp_faq_with_image_d3FrUd"
+    "sp_faq_with_image_d3FrUd",
+    "17578396179a946422"
   ]
 }
