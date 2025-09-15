@@ -126,69 +126,6 @@
         "padding_bottom": 12
       }
     },
-    "ss_text_block_pro_JUDBKx": {
-      "type": "ss-text-block-pro",
-      "blocks": {
-        "title_WxfLqA": {
-          "type": "title",
-          "settings": {
-            "title": "Premium Off-Court Padel Garments",
-            "title_custom": false,
-            "title_font": "roboto_n4",
-            "title_size": 40,
-            "title_size_mobile": 40,
-            "title_height": 100,
-            "title_align": "center",
-            "title_mt": 12,
-            "title_color": "#1c523b"
-          }
-        },
-        "text_34iCGR": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Designed for the modern player who values substance and style, the Padelism Heavyweight Tee is built for downtime.</p>",
-            "text_custom": false,
-            "text_font": "assistant_n4",
-            "text_size": 18,
-            "text_height": 140,
-            "text_align": "center",
-            "text_mt": 16,
-            "text_color": "#1c523b"
-          }
-        }
-      },
-      "block_order": [
-        "title_WxfLqA",
-        "text_34iCGR"
-      ],
-      "settings": {
-        "image_width": 20,
-        "image_custom": false,
-        "image_height_desktop": 400,
-        "image_height_mobile": 200,
-        "image_radius": 12,
-        "image_ration": "none",
-        "image_location": "row",
-        "image_location_mobile": "column",
-        "content_padding_horizontal": 20,
-        "content_padding_vertical": 20,
-        "content_radius": 20,
-        "gap": 20,
-        "gap_mobile": 5,
-        "background_color": "#f5f5f5",
-        "background_gradient": "",
-        "border_color": "#000000",
-        "content_bg": "",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "padding_horizontal": 5,
-        "padding_horizontal_mobile": 1.5,
-        "content_width": 120,
-        "border_thickness": 0
-      }
-    },
     "ss_slider_2_BMLWJM": {
       "type": "ss-slider-2",
       "blocks": {
@@ -322,6 +259,69 @@
         "lazy": true
       }
     },
+    "ss_text_block_pro_JUDBKx": {
+      "type": "ss-text-block-pro",
+      "blocks": {
+        "title_WxfLqA": {
+          "type": "title",
+          "settings": {
+            "title": "Premium Off-Court Padel Garments",
+            "title_custom": false,
+            "title_font": "roboto_n4",
+            "title_size": 40,
+            "title_size_mobile": 40,
+            "title_height": 100,
+            "title_align": "center",
+            "title_mt": 12,
+            "title_color": "#1c523b"
+          }
+        },
+        "text_34iCGR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Designed for the modern player who values substance and style, the Padelism Heavyweight Tee is built for downtime.</p>",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_size": 18,
+            "text_height": 140,
+            "text_align": "center",
+            "text_mt": 16,
+            "text_color": "#1c523b"
+          }
+        }
+      },
+      "block_order": [
+        "title_WxfLqA",
+        "text_34iCGR"
+      ],
+      "settings": {
+        "image_width": 20,
+        "image_custom": false,
+        "image_height_desktop": 400,
+        "image_height_mobile": 200,
+        "image_radius": 12,
+        "image_ration": "none",
+        "image_location": "row",
+        "image_location_mobile": "column",
+        "content_padding_horizontal": 20,
+        "content_padding_vertical": 20,
+        "content_radius": 20,
+        "gap": 20,
+        "gap_mobile": 5,
+        "background_color": "#f5f5f5",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "content_bg": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -441,8 +441,8 @@
   },
   "order": [
     "main",
-    "ss_text_block_pro_JUDBKx",
     "ss_slider_2_BMLWJM",
+    "ss_text_block_pro_JUDBKx",
     "related-products",
     "sp_gallery_chloe_DNkVXK",
     "sp_faq_with_image_d3FrUd"
