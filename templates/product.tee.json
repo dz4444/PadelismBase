@@ -156,28 +156,31 @@
         "slide_KUHpgC": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/IMG_3890.heic",
             "url": "",
-            "title": "New Slide",
-            "button": "Learn more",
-            "button_url": ""
+            "title": "Espresso Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-wakeup-off-court-tee"
           }
         },
         "slide_YhHzhB": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/IMG_4087.heic",
             "url": "",
-            "title": "New Slide",
-            "button": "Learn more",
-            "button_url": ""
+            "title": "Padel & Pizza Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-padelnpizza-off-court-tee"
           }
         },
         "slide_PYEgCU": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/IMG_3618.heic",
             "url": "",
-            "title": "New Slide",
-            "button": "Learn more",
-            "button_url": ""
+            "title": "Padelism Club 25",
+            "button": "shop This Product",
+            "button_url": "shopify://products/padelism-padelnpizza-off-court-tee"
           }
         }
       },
