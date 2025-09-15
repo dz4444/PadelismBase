@@ -189,6 +189,139 @@
         "border_thickness": 0
       }
     },
+    "ss_slider_2_BMLWJM": {
+      "type": "ss-slider-2",
+      "blocks": {
+        "slide_A93jJB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/03865F65-F0D9-4334-9717-AA26A3A993AA.jpg",
+            "url": "",
+            "title": "Ethan Bardo - GB No.8",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-p_one-hoodie"
+          }
+        },
+        "slide_CfC4Xj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/22415f2c-e676-4d2b-a235-abc06eb126e1.jpg",
+            "url": "",
+            "title": "Padel Coach Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-quik-off-court-tee"
+          }
+        },
+        "slide_UbH9bB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3890.heic",
+            "url": "",
+            "title": "Espresso Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-wakeup-off-court-tee"
+          }
+        },
+        "slide_Ejahwe": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_4087.heic",
+            "url": "",
+            "title": "Padel & Pizza Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-padelnpizza-off-court-tee"
+          }
+        },
+        "slide_QXKthC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/IMG_3618.heic",
+            "url": "",
+            "title": "Padelism Club 25",
+            "button": "shop This Product",
+            "button_url": "shopify://products/padelism-padelnpizza-off-court-tee"
+          }
+        }
+      },
+      "block_order": [
+        "slide_A93jJB",
+        "slide_CfC4Xj",
+        "slide_UbH9bB",
+        "slide_Ejahwe",
+        "slide_QXKthC"
+      ],
+      "name": "SS - Slider #2",
+      "settings": {
+        "slider_view": 4,
+        "slider_view_mobile": 1.2,
+        "slider_rotate": 0,
+        "card_padding_vertical": 20,
+        "card_padding_vertical_mobile": 14,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 8,
+        "card_radius": 18,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_ratio": "portrait",
+        "card_ratio_mobile": "portrait",
+        "card_overlay": 0.1,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": false,
+        "title_font": "sans_serif_n4",
+        "title_size": 28,
+        "title_size_mobile": 20,
+        "title_height": 130,
+        "button_custom": false,
+        "button_font": "sans_serif_n4",
+        "button_size": 14,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_mt": 16,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "button_radius": 0,
+        "button_border_thickness": 1,
+        "arrow_size": 50,
+        "arrow_size_mobile": 32,
+        "arrow_icon_size": 20,
+        "arrow_icon_size_mobile": 12,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "title_color": "#FFFFFF",
+        "card_border_color": "#121212",
+        "card_shadow_color": "#121212",
+        "card_overlay_color": "#121212",
+        "button_color": "#FFFFFF",
+        "button_hover_color": "#121212",
+        "button_bg_color": "",
+        "button_bg_hover_color": "#ffffff",
+        "button_border_color": "#FFFFFF",
+        "button_border_hover_color": "#FFFFFF",
+        "arrow_color": "#121212",
+        "arrow_hover_color": "#FFFFFF",
+        "arrow_bg_color": "#FFFFFF",
+        "arrow_bg_hover_color": "#121212",
+        "arrow_border_color": "#121212",
+        "arrow_border_hover_color": "#454545",
+        "background_color": "#1c523b",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "disabled": true,
@@ -309,6 +442,7 @@
   "order": [
     "main",
     "ss_text_block_pro_JUDBKx",
+    "ss_slider_2_BMLWJM",
     "related-products",
     "sp_gallery_chloe_DNkVXK",
     "sp_faq_with_image_d3FrUd"
