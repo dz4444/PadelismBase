@@ -146,10 +146,11 @@
         "slide_WYhPra": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/22415f2c-e676-4d2b-a235-abc06eb126e1.jpg",
             "url": "",
-            "title": "New Slide",
-            "button": "Learn more",
-            "button_url": ""
+            "title": "Padel Coach Tee",
+            "button": "Shop This Product",
+            "button_url": "shopify://products/padelism-quik-off-court-tee"
           }
         },
         "slide_KUHpgC": {
